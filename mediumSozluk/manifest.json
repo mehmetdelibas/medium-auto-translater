@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Medium Kelime Kumbarasi",
+  "version": "1.5",
+  "description": "Medium makalelerinde kelime/cumle cevirir ve kumbaraya kaydeder.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.medium.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
